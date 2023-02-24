@@ -1,170 +1,215 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <title>MCTS</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="cdn.jsdelivr.net/npm/bootstrap%405.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
-    <link rel="stylesheet" href="cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
-    <link rel="stylesheet"
-        href="cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
-    <link rel="stylesheet" href="cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+    integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+  <link rel="stylesheet" href="cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+  <link rel="stylesheet" href="cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+  <link rel="stylesheet" href="cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
   <link rel="stylesheet" href="style.css" type="text/css">
 
 </head>
+
 <body>
 
-<nav class="navbar navbar-expand-sm ms-5">
-  <div class="container-fluid ">
-    <div class="row w-100">
-      <div class="col-md-4 d-flex align-items-center ">
-        <a class="navbar-brand" href="#">
-          <img src="assets\images\logo.png" style="width:400px;">
-              </a>
-              </div>
-               
-    
-   
-     
-    <div class="col-md-8  mt-5 align-items-center">
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="collapsibleNavbar">
-      <ul class="navbar-nav">
-        <li class="nav-item">
-          <a class="nav-link" href="index.html">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="services.html">Services</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="contact.html">Contact Us</a>
-        </li>
-      </ul>
+  <nav class="navbar navbar-expand-sm ms-5">
+    <div class="container-fluid ">
+      <div class="row w-100">
+        <div class="col-md-4 d-flex align-items-center ">
+          <a class="navbar-brand" href="#">
+            <img src="assets\images\logo.png" style="width:400px;">
+          </a>
+        </div>
+
+
+
+
+        <div class="col-md-8  mt-5 align-items-center">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="services.html">Services</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact Us</a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
     </div>
-    </div>
-  </div>
-</nav>
-<!-- Service 1 -->
-<div class="container-fluid  service-1 ">
-<h1 class="text-white py-5 services-title" style="text-align:left;">Business Analysis</h1>
-</div>
-
-<div class="container">
-  <h2 class="pt-4">Identifying Business Needs and Solutions to Improve Profits, Cash Flow, and Management</h2>
-  <div class="row">
-    <div class="col-md-7 pt-5">
-    <p class="lead text-black">A business analysis is the discipline of identifying business needs and solutions to problems. Using a proprietary system,MCTS Transport has analyzed over 9,000 businesses across the United States.
-
-</p>
-    </div>
-    <div class="col-md-5">
-<img src="assets\images\images5.jpg" class="img-fluid ps-5">
-    </div>
-  </div>
-  <ul class="lead1 pt-3">
-  <li style="font-size:22px;font-weight:400;margin-top:10px;">Our business analyst performs a competitive analysis of your business vs. peer businesses performing in the top twenty-five percent of your industry.</li>
-  <li style="font-size:22px;font-weight:400;margin-top:10px;">We identify strengths and weaknesses as they pertain to operations, management, and most importantly, their corresponding relationship to profits.</li>
-  <li style="font-size:22px;font-weight:400;margin-top:10px;">We quantify the potential benefits that will result from the corrective action taken by you, our client, in addressing those issues in terms of dollar savings, organizational effectiveness and ease of operations.</li>
-</ul>
-<p class="lead text-black pt-2">Whether you’ve got yourself in a dire situation that requires immediate and definitive action, or you simply want to make your already successful company more successful, we can assist you. Our emphasis is on getting quick, measurable results by working closely with ownership. Because you are the expert in your business we work directly with you taking in your expertise and combining it with our knowledge of improved profits. We assist with developing, designing, and as needed, implementing permanent changes. It is our goal to build skills, commitment and consensus, enhance management control, and increase the likelihood of a successful turnaround where necessary or to sustain profit and cash flow improvements for already successful businesses.
-
-We’ve been providing management consulting services for small businesses and increasing profits for more than 30 years, and draw from that experience to help you achieve your immediate and long-term business goals. We help you refocus and stabilize your business on the key issues that will establish total accountability throughout your organization, implementing profits and cash flow.</p>
-<h5 class="py-4">START EARNING WHAT YOU DESERVE!</h5>
-<ul>
-  <li class="services-business"> <strong>INCREASE</strong> cash flow and REDUCE bank borrowings </li>
-  <li class="services-business"> <strong>ESTABLISH</strong> cash management solutions </li>
-  <li class="services-business"> <strong>REEVALUATE</strong> business plans</li>
-  <li class="services-business"> <strong>DEVELOP</strong> and implement profit improvement for ownership and senior management </li>
-  <li class="services-business"> <strong>INFLUENCE</strong> and <strong>IMPLEMENT</strong>  long-term strategies for sustained business growth in profits and revenues, and quality of life for ownership </li>
-  <li class="services-business"> <strong>PROVIDE</strong> training, coaching and education to assure generational transitions are seamless </li>
-</ul>
-</div>
-
-
-
-<div class="container-fluid py-5 service-2">
-<h1 class="text-white py-5 services-title"style="text-align:left;">Employee Evaluation</h1>
-</div>
-
-<div class="container">
-  <h2 class="pt-4">What does the productivity of your staff look like on paper? Could it be better?</h2>
-  <div class="row">
-    <div class="col-md-7 pt-5">
-    <p class="lead text-black">For over 30 years, the business improvement professionals of MCTS transport have worked closely with business owners who have not realized the potential output of their staff. What’s more troubling is that many haven’t developed the proper measurement metrics to know how their staff is performing.
-</p>
-
-    </div>
-    <div class="col-md-5">
-<img src="assets/images/images6.jpg" class="img-fluid ps-5">
-    </div>
-    <p class="text-black lead">Establishing clearly defined workplace roles, and improving communication between ownership, management and staff, our focus is:</p>
-  </div>
-  <ul class="lead1 pt-3">
-  <li style="font-size:22px;font-weight:400;margin-top:10px;">Establishing and communicating expected job roles and requirements between employees, management and owners</li>
-  <li style="font-size:22px;font-weight:400;margin-top:10px;">Creating evaluation techniques and guidelines for management to track employee success and areas for improvement</li>
-  <li style="font-size:22px;font-weight:400;margin-top:10px;">Developing incentives for increased employee productivity and time management through a pay-for-performance program</li>
-  <li style="font-size:22px;font-weight:400;margin-top:10px;">Teaching, training and setting timelines for development</li>
-  <li style="font-size:22px;font-weight:400;margin-top:10px;">Creating curriculums to foster advancement</li>
-
-</ul>
-
-</div>
-
-<div class="container-fluid py-5 service-3">
-<h1 class="text-white py-5 services-title"style="text-align:left;">Employee Training</h1>
-</div>
-
-<div class="container">
-  <h2 class="pt-4">Developing Effective Results Through Educational Development and Training</h2>
-  <div class="row">
-    <div class="col-md-7 pt-5">
-    <p class="lead text-black">To remain competitive in their industries, businesses need employees who carry the skills and knowledge to stay productive and drive results. By keeping staff educated and actively engaged, an owner not only lays the foundation for an employee’s job growth within the organization, but also nurtures the employee’s personal potential.
-</p>
-
-    </div>
-    <div class="col-md-5">
-<img src="assets/images/images9.jpg" class="img-fluid ps-5 ">
-    </div>
-    <p class="text-black lead"> MCTS Transport values the importance of having an effectively trained managerial and non-managerial staff. Our team of employee evaluation, and training consultants have aided numerous businesses in the development of core leadership programs, company training, process training and job-growth courses. These programs are tailored to the individual business, and designed to drive company productivity and employee fervor and performance.</p>
+  </nav>
+  <!-- Service 1 -->
+  <div class="container-fluid  service-1 ">
+    <h1 class="text-white py-5 services-title" style="text-align:left;">Business Analysis</h1>
   </div>
 
-</div>
+  <div class="container">
+    <h2 class="pt-4">Identifying Business Needs and Solutions to Improve Profits, Cash Flow, and Management</h2>
+    <div class="row">
+      <div class="col-md-7 pt-5">
+        <p class="lead text-black">A business analysis is the discipline of identifying business needs and solutions to
+          problems. Using a proprietary system,MCTS Transport has analyzed over 9,000 businesses across the United
+          States.
 
-
-<div class="container-fluid py-5 service-5">
-<h1 class="text-white py-5 services-title"style="text-align:left;">Profit Improvement</h1>
-</div>
-
-<div class="container">
-  <h2 class="pt-4">Increasing Cash Flow, Improving Operational Effectiveness and Promoting Small and Medium-Sized Business Growth for over 30 years</h2>
-  <div class="row">
-    <div class="col-md-7 pt-5">
-    <p class="lead text-black">The Profit Improvement professionals of American Management Services have been helping businesses get back on track through strategic business evaluation, appraisal, and performance improvements, designed and tailored to their specific industries and needs. Successful profit improvement points of focus include:
-</p>
-
+        </p>
+      </div>
+      <div class="col-md-5">
+        <img src="assets\images\images5.jpg" class="img-fluid ps-5">
+      </div>
     </div>
-    <div class="col-md-5">
-<img src="assets/images/images11.jpg" class="img-fluid ps-5">
-    </div>
+    <ul class="lead1 pt-3">
+      <li style="font-size:22px;font-weight:400;margin-top:10px;">Our business analyst performs a competitive analysis
+        of your business vs. peer businesses performing in the top twenty-five percent of your industry.</li>
+      <li style="font-size:22px;font-weight:400;margin-top:10px;">We identify strengths and weaknesses as they pertain
+        to operations, management, and most importantly, their corresponding relationship to profits.</li>
+      <li style="font-size:22px;font-weight:400;margin-top:10px;">We quantify the potential benefits that will result
+        from the corrective action taken by you, our client, in addressing those issues in terms of dollar savings,
+        organizational effectiveness and ease of operations.</li>
+    </ul>
+    <p class="lead text-black pt-2">Whether you’ve got yourself in a dire situation that requires immediate and
+      definitive action, or you simply want to make your already successful company more successful, we can assist you.
+      Our emphasis is on getting quick, measurable results by working closely with ownership. Because you are the expert
+      in your business we work directly with you taking in your expertise and combining it with our knowledge of
+      improved profits. We assist with developing, designing, and as needed, implementing permanent changes. It is our
+      goal to build skills, commitment and consensus, enhance management control, and increase the likelihood of a
+      successful turnaround where necessary or to sustain profit and cash flow improvements for already successful
+      businesses.
+
+      We’ve been providing management consulting services for small businesses and increasing profits for more than 30
+      years, and draw from that experience to help you achieve your immediate and long-term business goals. We help you
+      refocus and stabilize your business on the key issues that will establish total accountability throughout your
+      organization, implementing profits and cash flow.</p>
+    <h5 class="py-4">START EARNING WHAT YOU DESERVE!</h5>
+    <ul>
+      <li class="services-business"> <strong>INCREASE</strong> cash flow and REDUCE bank borrowings </li>
+      <li class="services-business"> <strong>ESTABLISH</strong> cash management solutions </li>
+      <li class="services-business"> <strong>REEVALUATE</strong> business plans</li>
+      <li class="services-business"> <strong>DEVELOP</strong> and implement profit improvement for ownership and senior
+        management </li>
+      <li class="services-business"> <strong>INFLUENCE</strong> and <strong>IMPLEMENT</strong> long-term strategies for
+        sustained business growth in profits and revenues, and quality of life for ownership </li>
+      <li class="services-business"> <strong>PROVIDE</strong> training, coaching and education to assure generational
+        transitions are seamless </li>
+    </ul>
   </div>
-  <ul class="lead1 pt-3">
-  <li style="font-size:22px;font-weight:400;margin-top:10px;">Increasing employee productivity through evaluation and training</li>
-  <li style="font-size:22px;font-weight:400;margin-top:10px;">Through a solid inventory management process, increasing inventory turns will generate incremental profit and cash</li>
-  <li style="font-size:22px;font-weight:400;margin-top:10px;">Training, training and training</li>
-  <li style="font-size:22px;font-weight:400;margin-top:10px;">Proper daily and weekly controls in place to measure all key aspects of your business</li>
-  <li style="font-size:22px;font-weight:400;margin-top:10px;">Establishment of a PDP (Pre-Determined Profit) Plans</li>
-  <li style="font-size:22px;font-weight:400;margin-top:10px;">Implement PFP (Pay For Performance) Plan</li>
-</ul>
-<p class="lead text-black mt-5">Our philosophy of pre-determined profit focuses on a profits first strategy which is 110% opposite of a residual budgeting approach. As an owner, your leadership and commitment to maximizing profit will pay dividends to you, your family, your vendors, customers and the community around you.</p>
-</div>
 
-<!-- social-icon-area -->
+
+
+  <div class="container-fluid py-5 service-2">
+    <h1 class="text-white py-5 services-title" style="text-align:left;">Employee Evaluation</h1>
+  </div>
+
+  <div class="container">
+    <h2 class="pt-4">What does the productivity of your staff look like on paper? Could it be better?</h2>
+    <div class="row">
+      <div class="col-md-7 pt-5">
+        <p class="lead text-black">For over 30 years, the business improvement professionals of MCTS transport have
+          worked closely with business owners who have not realized the potential output of their staff. What’s more
+          troubling is that many haven’t developed the proper measurement metrics to know how their staff is performing.
+        </p>
+
+      </div>
+      <div class="col-md-5">
+        <img src="assets/images/images6.jpg" class="img-fluid ps-5">
+      </div>
+      <p class="text-black lead">Establishing clearly defined workplace roles, and improving communication between
+        ownership, management and staff, our focus is:</p>
+    </div>
+    <ul class="lead1 pt-3">
+      <li style="font-size:22px;font-weight:400;margin-top:10px;">Establishing and communicating expected job roles and
+        requirements between employees, management and owners</li>
+      <li style="font-size:22px;font-weight:400;margin-top:10px;">Creating evaluation techniques and guidelines for
+        management to track employee success and areas for improvement</li>
+      <li style="font-size:22px;font-weight:400;margin-top:10px;">Developing incentives for increased employee
+        productivity and time management through a pay-for-performance program</li>
+      <li style="font-size:22px;font-weight:400;margin-top:10px;">Teaching, training and setting timelines for
+        development</li>
+      <li style="font-size:22px;font-weight:400;margin-top:10px;">Creating curriculums to foster advancement</li>
+
+    </ul>
+
+  </div>
+
+  <div class="container-fluid py-5 service-3">
+    <h1 class="text-white py-5 services-title" style="text-align:left;">Employee Training</h1>
+  </div>
+
+  <div class="container">
+    <h2 class="pt-4">Developing Effective Results Through Educational Development and Training</h2>
+    <div class="row">
+      <div class="col-md-7 pt-5">
+        <p class="lead text-black">To remain competitive in their industries, businesses need employees who carry the
+          skills and knowledge to stay productive and drive results. By keeping staff educated and actively engaged, an
+          owner not only lays the foundation for an employee’s job growth within the organization, but also nurtures the
+          employee’s personal potential.
+        </p>
+
+      </div>
+      <div class="col-md-5">
+        <img src="assets/images/images9.jpg" class="img-fluid ps-5 ">
+      </div>
+      <p class="text-black lead"> MCTS Transport values the importance of having an effectively trained managerial and
+        non-managerial staff. Our team of employee evaluation, and training consultants have aided numerous businesses
+        in the development of core leadership programs, company training, process training and job-growth courses. These
+        programs are tailored to the individual business, and designed to drive company productivity and employee fervor
+        and performance.</p>
+    </div>
+
+  </div>
+
+
+  <div class="container-fluid py-5 service-5">
+    <h1 class="text-white py-5 services-title" style="text-align:left;">Profit Improvement</h1>
+  </div>
+
+  <div class="container">
+    <h2 class="pt-4">Increasing Cash Flow, Improving Operational Effectiveness and Promoting Small and Medium-Sized
+      Business Growth for over 30 years</h2>
+    <div class="row">
+      <div class="col-md-7 pt-5">
+        <p class="lead text-black">The Profit Improvement professionals of American Management Services have been
+          helping businesses get back on track through strategic business evaluation, appraisal, and performance
+          improvements, designed and tailored to their specific industries and needs. Successful profit improvement
+          points of focus include:
+        </p>
+
+      </div>
+      <div class="col-md-5">
+        <img src="assets/images/images11.jpg" class="img-fluid ps-5">
+      </div>
+    </div>
+    <ul class="lead1 pt-3">
+      <li style="font-size:22px;font-weight:400;margin-top:10px;">Increasing employee productivity through evaluation
+        and training</li>
+      <li style="font-size:22px;font-weight:400;margin-top:10px;">Through a solid inventory management process,
+        increasing inventory turns will generate incremental profit and cash</li>
+      <li style="font-size:22px;font-weight:400;margin-top:10px;">Training, training and training</li>
+      <li style="font-size:22px;font-weight:400;margin-top:10px;">Proper daily and weekly controls in place to measure
+        all key aspects of your business</li>
+      <li style="font-size:22px;font-weight:400;margin-top:10px;">Establishment of a PDP (Pre-Determined Profit) Plans
+      </li>
+      <li style="font-size:22px;font-weight:400;margin-top:10px;">Implement PFP (Pay For Performance) Plan</li>
+    </ul>
+    <p class="lead text-black mt-5">Our philosophy of pre-determined profit focuses on a profits first strategy which is
+      110% opposite of a residual budgeting approach. As an owner, your leadership and commitment to maximizing profit
+      will pay dividends to you, your family, your vendors, customers and the community around you.</p>
+  </div>
+
+  <!-- social-icon-area -->
   <div class="footer-section">
     <div class="row">
       <div class="col-md-5">
@@ -174,80 +219,73 @@ We’ve been providing management consulting services for small businesses and i
           7900 International Drive STE 300<br>
 
           Bloomington, MN 55425
-  </p>
-  <p class="mt-3 footer-inner"><i class="fa fa-phone-alt mr-2"></i> &nbsp; (952) 236-8133</p>
-  <p class="mt-3 footer-inner"><i class="fa fa-envelope mr-2"></i> &nbsp;<br>Email:info@example.com</p>
-  <div class="icons-parent">
-     <div class="social-icon-area">
-               <a class="text-white px-2" href="#">
-                   <i class="fab fa-facebook-f"></i>
-               </a>
-           </div>
-           <!-- social-icon-area -->
+        </p>
+        <p class="mt-3 footer-inner"><i class="fa fa-phone-alt mr-2"></i> &nbsp; (952) 236-8133</p>
+        <p class="mt-3 footer-inner"><i class="fa fa-envelope mr-2"></i> &nbsp;<br>Email:info@example.com</p>
+        <div class="icons-parent">
+          <div class="social-icon-area">
+            <a class="text-white px-2" href="#">
+              <i class="fab fa-facebook-f"></i>
+            </a>
+          </div>
+          <!-- social-icon-area -->
 
-           <div class="social-icon-area">
-               <a class="text-white px-2" href="#">
-                   <i class="fab fa-twitter"></i>
-               </a>
-           </div>
-           <!-- social-icon-area -->
+          <div class="social-icon-area">
+            <a class="text-white px-2" href="#">
+              <i class="fab fa-twitter"></i>
+            </a>
+          </div>
+          <!-- social-icon-area -->
 
-           <div class="social-icon-area">
-               <a class="text-white px-2" href="#">
-                   <i class="fab fa-linkedin-in"></i>
-               </a>
-           </div>
-           <!-- social-icon-area -->
+          <div class="social-icon-area">
+            <a class="text-white px-2" href="#">
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+          </div>
+          <!-- social-icon-area -->
 
-           <div class="social-icon-area">
-               <a class="text-white px-2" href="#">
-                   <i class="fab fa-instagram"></i>
-               </a>
-           </div>
-           <!-- social-icon-area -->
-           <div class="social-icon-area">
-               <a class="text-white px-2" href="#">
-                   <i class="fab fa-youtube"></i>
-               </a>
-           </div>
-           <!-- social-icon-area -->
+          <div class="social-icon-area">
+            <a class="text-white px-2" href="#">
+              <i class="fab fa-instagram"></i>
+            </a>
+          </div>
+          <!-- social-icon-area -->
+          <div class="social-icon-area">
+            <a class="text-white px-2" href="#">
+              <i class="fab fa-youtube"></i>
+            </a>
+          </div>
+          <!-- social-icon-area -->
 
-       </div>
-
-
-
-
-
-
+        </div>
       </div>
+      
       <div class="col-md-7">
-
         <p class="mt-4 footer-inner">
           MCTS Transport <br>
-
-          1016 W. Jackson Blvd<br>
-
-          # 345 Chicago, IL. 60607
-  </p>
-  <p class="mt-3 footer-inner"><i class="fa fa-phone-alt mr-2"></i> &nbsp; (312)-659-3981</p>
-  <p class="mt-3 footer-inner"><i class="fa fa-envelope mr-2"></i> &nbsp;<br>Email:info@example.com</p>
+          1016 W. Jackson Blvd STE 345<br>
+          Chicago, IL. 60607
+        </p>
+        <p class="mt-3 footer-inner"><i class="fa fa-phone-alt mr-2"></i> &nbsp; (312)-659-3981</p>
+        <p class="mt-3 footer-inner"><i class="fa fa-envelope mr-2"></i> &nbsp;<br>Email:info@example.com</p>
       </div>
     </div>
   </div>
 
 
-      <!-- footer-section -->
+  <!-- footer-section -->
   <div class="bottom-footer-section">
-      <div class="inner-sec-container"  style="max-width:1360px;">
-          <div class="bottom-footer-content-wrapper">
-          <p>&copy; <a href="#"> MCTS Transport .</a> All Rights Reserved.</p>
-        </div>
+    <div class="inner-sec-container" style="max-width:1360px;">
+      <div class="bottom-footer-content-wrapper">
+        <p>&copy; <a href="#"> MCTS Transport .</a> All Rights Reserved.</p>
+      </div>
 
-  </div>
+    </div>
   </div>
   <script src="cdn.jsdelivr.net/npm/bootstrap%405.2.0-beta1/dist/js/bootstrap.bundle.min.js">
-</script>
-<script src="ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<script src="assets/js/theme.js"></script>
+  </script>
+  <script src="ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="assets/js/theme.js"></script>
 </body>
+
 </html>
