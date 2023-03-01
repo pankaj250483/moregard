@@ -1854,4 +1854,8 @@ section {
   #footer .credits {
     padding-top: 4px;
   }
+
+  .dk{
+    font-size: 50px;
+  }
 }
