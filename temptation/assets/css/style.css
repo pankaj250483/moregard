@@ -1925,7 +1925,12 @@ section {
     color: white;
   }
   
-  
+  .bg-firm
+  {
+    background-image: url('../img/pexels-F1.jpeg');
+    background-position: center center;
+    background-size: cover;
+  }
   @media screen and (max-width: 600px) {
     .topnav a:not(:first-child), .dropdown .dropbtn {
       display: none;
