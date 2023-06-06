@@ -277,6 +277,7 @@ h6 {
   .navbar .dropdown .dropdown:hover>ul {
     left: -100%;
   }
+   
 }
 
 /**
@@ -1866,10 +1867,6 @@ section {
   #footer .credits {
     padding-top: 4px;
   }
-
-  {
-    font-size: 70px;
-  }
 }
 
 #myVideo {
@@ -1954,7 +1951,7 @@ section {
   }
   
   .topnav a:hover, .dropdown:hover .dropbtn {
-    background-color: ;
+    background-color:black ;
     color: white;
   }
   
