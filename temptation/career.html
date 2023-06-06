@@ -49,8 +49,20 @@
       <nav id="navbar" class="navbar">
         <ul>
           <li><a class="nav-link scrollto" href="firm.html">Our Firm</a></li>
-          <li><a class="nav-link scrollto" href="index.html#team">Team</a></li>
-          <li><a class="nav-link scrollto" href="sectors.html">Sectors</a></li>
+          <li><a class="nav-link scrollto" href="team.html">Team</a></li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Sectors
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="sectors.html#consumer">Consumer</a></li>
+              <li><a class="dropdown-item" href="sectors.html#financial">Financial Services</a></li>
+              <li><a class="dropdown-item" href="sectors.html#healthcare">Healthcare</a></li>
+              <li><a class="dropdown-item" href="sectors.html#industrial">Industrial & Business Services</a></li>
+              <li><a class="dropdown-item" href="sectors.html#realestate">Real Estate</a></li>
+              <li><a class="dropdown-item" href="sectors.html#technology">Technology</a></li>
+            </ul>
+          </li>
           <li><a class="nav-link scrollto" href="engagement.html">Engagement</a></li>
           <li><a class="nav-link scrollto" href="career.html">Careers</a></li>
         </ul>
@@ -86,19 +98,34 @@
     <div class="footer-top">
       <div class="container">
         <div class="row">
+          <div class="col-lg-11 col-md-6 footer-contact text-end ">
+            <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#exampleModal">
+              Contact
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
 
-          <div class="col-lg-3 col-md-6 footer-contact ">
-            <h3>Temptation Capital</h3>
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <h5>Contact Us</h5>
             <p>
-              1016 W. Jackson Blvd<br>
-              STE 345<br>
-              Chicago, IL 60607 <br><br>
-              <strong>Phone:</strong>+312-439-1941<br>
-          
+            Switchboard <b> +1 312-439-1941</b>
+            </p>
+            <br>
+            <h5>Media Center</h5>
+            <p>
+              For Press Inquiries,<br>
+              contact <b>pressinquiries@temptationcapital.com</b>
             </p>
           </div>
-
-
         </div>
       </div>
     </div>

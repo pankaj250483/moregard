@@ -14,7 +14,9 @@
   <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
   <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Jost:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Jost:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+    rel="stylesheet">
 
   <!-- Vendor CSS Files -->
   <link href="assets/vendor/aos/aos.css" rel="stylesheet">
@@ -49,8 +51,21 @@
       <nav id="navbar" class="navbar">
         <ul>
           <li><a class="nav-link scrollto" href="firm.html">Our Firm</a></li>
-          <li><a class="nav-link scrollto" href="index.html#team">Team</a></li>
-          <li><a class="nav-link scrollto" href="sectors.html">Sectors</a></li>
+          <li><a class="nav-link scrollto" href="team.html">Team</a></li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Sectors
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="sectors.html#consumer">Consumer</a></li>
+              <li><a class="dropdown-item" href="sectors.html#financial">Financial Services</a></li>
+              <li><a class="dropdown-item" href="sectors.html#healthcare">Healthcare</a></li>
+              <li><a class="dropdown-item" href="sectors.html#industrial">Industrial & Business Services</a></li>
+              <li><a class="dropdown-item" href="sectors.html#realestate">Real Estate</a></li>
+              <li><a class="dropdown-item" href="sectors.html#technology">Technology</a></li>
+            </ul>
+          </li>
           <li><a class="nav-link scrollto" href="engagement.html">Engagement</a></li>
           <li><a class="nav-link scrollto" href="career.html">Careers</a></li>
         </ul>
@@ -73,7 +88,7 @@
 
       </div>
     </section><!-- End Breadcrumbs -->
-
+    <!-- 
     <section class="inner-page">
       <div class="container text-center">
         <h1>Engagement</h1>
@@ -83,106 +98,173 @@
           </div>
         </div>
       </div>
-    </section>
+    </section> -->
 
-    <div class="container">
-      <img src="assets\img\skills.png" class="w-100">
+    <div class="container-fluid p-0 m-0">
+      <img src="assets\img\engagement.png" class="w-100">
     </div>
 
     <div class="container text-center mt-5 pt-5">
-      <h1>Technology</h1>
-      <div class="row">
-        <div class="col-md-6 mt-3">
-          <img src="assets\img\pexels-5.jpeg" class="w-100">
+      <div class="row justify-content-center">
+        <div class="col-md-10 mt-3 text-justify">
+          <!-- <p>Our Diversity, Equity & Inclusion (DEI) efforts center around our most important asset: our people. We are committed to attracting, developing, and advancing a diverse workforce that represents a spectrum of backgrounds, identities and experiences. </p> -->
+          <p>At Temptation Capital, we believe that the quality of our investments and our ability to build great
+            companies depend on the originality of our insights. Promoting diversity, equity and inclusion is a core
+            value at Temptation Capital, embedded into the highest levels of our firm and guided by our Diversity,
+            Equity & Inclusion Council.</p>
+          <p>Our DE&I Council is a 10-member partner steering committee led by our CEO and Chief Human Resources Officer
+            and supported by three advisory groups focused on recruiting and engagement with our external ecosystem and
+            internal teams. Diversity, Equity and Inclusion is critically important to our culture and makes our firm,
+            companies and communities stronger. Temptation Capital takes a holistic approach to promote DEI within our
+            firm and across our portfolio in order to deliver for our stakeholders. Our DEI approach centers on four
+            pillars: recruiting, talent development, community and inclusion, and accountability.</p>
+
         </div>
-         <div class="col-md-6 mt-3">
-          <h5 style="color:blue">Digital Transformation  </h5>
-          
-          <p>Technology is the backbone of our economy. Tech-enabled disruptors continue to change the way we live and work, while businesses across sectors are facing the need for digital transformation in order to compete and serve the evolving needs of their customers. Temptation Capital is dedicated to building and supporting companies that transform the way we think about productivity and innovation within organizations.    </p>
-          <h5 style="color:blue">Software and Enterprise </h5>
-          <p>Temptation Capital's Software and Enterprise Technology team brings deep sector expertise and operating capabilities to companies across all stages of growth. We have worked with disruptors to build their playbooks, and we know how to transform today’s platforms into next-generation leaders. Our approach prioritizes active and engaged partnership, working with management teams to make their companies stronger and more strategic than they were before our investment.</p>
+      </div>
+    </div>
+
+    <div class="container text-center mt-5 pt-5">
+      <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+        <li class="nav-item w-25 pb-5" role="presentation">
+          <button class="nav-link active m-auto" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home"
+            type="button" role="tab" aria-controls="pills-home" aria-selected="true">RECRUITING</button>
+        </li>
+        <li class="nav-item w-25 pb-5" role="presentation">
+          <button class="nav-link m-auto" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile"
+            type="button" role="tab" aria-controls="pills-profile" aria-selected="false">TALENT DEVELOPMENT</button>
+        </li>
+        <li class="nav-item w-25 pb-5" role="presentation">
+          <button class="nav-link m-auto" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact"
+            type="button" role="tab" aria-controls="pills-contact" aria-selected="false">COMMUNITY AND INCLUSION</button>
+        </li>
+        <li class="nav-item w-25 pb-5" role="presentation">
+          <button class="nav-link m-auto" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact"
+            type="button" role="tab" aria-controls="pills-contact" aria-selected="false">ACCOUNTABILITY</button>
+        </li>
+      </ul>
+      <div class="tab-content " id="pills-tabContent">
+        <div class="tab-pane fade show active text-dark" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+          <div class="row justify-content-center">
+            <div class="col-md-5">
+              <img class="img-fluid w-100" src="assets/img/rec.png">
+            </div>
+            <div class="col-md-5 text-start ps-5">
+              <h2>Recruiting</h2>
+              <p>
+              Diverse teams are more innovative and yield better outcomes. Attracting diverse talent requires expanding our talent pipelines and broadening our reach to candidates of all backgrounds, identities, experiences and skill sets. Our Future Women Leaders and Diverse Leaders Programs are examples of our commitment to creating new talent pipelines and building the next generation of leaders.
+              </p>   
+            </div>
           </div>
-      </div>
-    </div>
+          
 
-    
-    <div class="container pt-5 mt-5">
-      <h1>Healthcare</h1>
-      <div class="row">
-        <div class="col-md-6 mt-3">
-          <p>The global healthcare market is highly complex, but it is one of the most compelling and impactful sectors we invest in. The healthcare market is constantly evolving in response to the challenges of the global disease burden as well as market forces such as increasing consumerization of healthcare services. At the same time, the discovery and adoption of new technologies are introducing innovation and opportunity into a system that has historically struggled with inefficiency and opacity. 
-            </p>
- 
-             <h5 style="color:blue">complex environment</h5>
-          <p>In This complex environment, Temptation Capital's focus remains simple—to build and grow companies that are adding value to the healthcare system and enabling better outcomes for patients. We have partnered with founders and management teams to drive enduring growth and create products and services that have delivered breakthrough innovation, reduced costs, and expanded access to high-quality care.
+        </div>
+        <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+          
+        </div>
+        <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
+          
+          
 
-
-          </p></div>
-        <div class="col-md-6 mt-3">
-          <img src="assets\img\pexels-hc1.webp" class="w-100">
+          
+          
+         
+          
+          
+          
         </div>
       </div>
-   </div>
+    </div>
 
-   <div class="container pt-5 mt-5">
-    <h1>Real Estate</h1>
-    <div class="row">
-      <div class="col-md-6 mt-3">
-        <img src="assets\img\pexels-2.webp" class="w-100">
-      </div>
-      <div class="col-md-6 mt-3">
-        <h5 style="color:blue">Partnership approach </h5>
-        <p>Temptation Capital takes a partnership approach to real estate investing – both at the asset level as well as at the platform / entity-level. This approach has allowed us to create significant enterprise value beyond the underlying value of the assets. 
 
-        </p>
-        <p>The firm’s real estate investments span all major categories, with a particular emphasis on “new economy” verticals. We have an established track record across residential, commercial, hospitality, industrial, logistics, data centers and other niche real estate sectors including parking and self-storage. </p>
-        <p>Our investment experience has been across the value chain, and in partnership with leading real estate owners, developers, operators, and asset managers.
-        </p>
+
+
+
+    <div class="container text-center mt-5 pt-5">
+      <h1>Connecting the dots with Temptation Capital Markets</h1>
+      <div class="row">
+        <div class="col-md-6 mt-3 pt-5 ">
+          <h5 style="color:blue">Capital Markets</h5>
+          <p>Temptation Capital Markets (TCM) supports our firm, portfolio companies, and clients by providing tailored
+            capital markets advice and developing and implementing both traditional and nontraditional capital solutions
+            for investments and companies seeking financing. We leverage the intellectual capital, industry expertise,
+            and our global network to deliver the full capabilities of our firm.
+            <h5 style="color:blue">Our Capabilities</h5>
+            <p>Our capital markets services include arranging debt and equity financing for transactions of all shapes
+              and sizes and structuring investment products. Temptation Capital Markets is a broker-dealer capable of
+              originating, structuring, and executing full capital structures, including:
+        </div>
+        <div class="col-md-6 mt-3 ">
+          <img src="assets\img\pexel market1.webp" class="w-100">
+
+        </div>
       </div>
     </div>
-   </div>
 
-   <div class="container text-center mt-5 pt-5">
-    <h1>Connecting the dots with Temptation Capital Markets</h1>
-    <div class="row">
-      <div class="col-md-6 mt-3 pt-5 ">
-        <h5 style="color:blue">Capital Markets</h5>
-        <p>Temptation Capital Markets (TCM) supports our firm, portfolio companies, and clients by providing tailored capital markets advice and developing and implementing both traditional and nontraditional capital solutions for investments and companies seeking financing. We leverage the intellectual capital, industry expertise, and our global network to deliver the full capabilities of our firm.  
-          <h5 style="color:blue">Our Capabilities</h5>
-        <p>Our capital markets services include arranging debt and equity financing for transactions of all shapes and sizes and structuring investment products. Temptation Capital Markets is a broker-dealer capable of originating, structuring, and executing full capital structures, including:</div>
-      <div class="col-md-6 mt-3 ">
-        <img src="assets\img\pexel market1.webp" class="w-100" >
-        
+
+    <div class="container mt-5 pt-5">
+      <h1 style="text-align:left; color:black">Employee Evaluation</h1>
+      <div class="row">
+        <div class="col-md-8 mt-5">
+          <h3>Establishing clearly defined workplace roles, and improving communication between ownership,
+            management and staff, our focus is:</h3>
+        </div>
+        <div class="col-md-3 mt-5">
+          <img src="assets\img\pexels-photo-EV1.jpeg" class="w-100">
+        </div>
       </div>
+      <ul class="lead1 ">
+        <li style="font-size:22px;font-weight:400;margin-top:10px;">Establishing and communicating expected job
+          roles and
+          requirements between employees, management and owners</li>
+        <li style="font-size:22px;font-weight:400;margin-top:10px;">Creating evaluation techniques and guidelines
+          for
+          management to track employee success and areas for improvement</li>
+        <li style="font-size:22px;font-weight:400;margin-top:10px;">Developing incentives for increased employee
+          productivity and time management through a pay-for-performance program</li>
+        <li style="font-size:22px;font-weight:400;margin-top:10px;">Teaching, training and setting timelines for
+          development</li>
+        <li style="font-size:22px;font-weight:400;margin-top:10px;">Creating curriculums to foster advancement</li>
+
+      </ul>
     </div>
-   </div>
-
-
-    
 
   </main><!-- End #main -->
 
   <!-- ======= Footer ======= -->
   <footer id="footer">
 
-   
 
     <div class="footer-top">
       <div class="container">
         <div class="row">
+          <div class="col-lg-11 col-md-6 footer-contact text-end ">
+            <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#exampleModal">
+              Contact
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
 
-          <div class="col-lg-3 col-md-6 footer-contact ">
-            <h3>Temptation Capital</h3>
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <h5>Contact Us</h5>
             <p>
-              1016 W. Jackson Blvd<br>
-              STE 345<br>
-              Chicago, IL 60607 <br><br>
-              <strong>Phone:</strong>+312-439-1941<br>
-          
+              Switchboard <b> +1 312-439-1941</b>
+            </p>
+            <br>
+            <h5>Media Center</h5>
+            <p>
+              For Press Inquiries,<br>
+              contact <b>pressinquiries@temptationcapital.com</b>
             </p>
           </div>
-
-          
         </div>
       </div>
     </div>
@@ -199,7 +281,8 @@
   </footer><!-- End Footer -->
 
   <div id="preloader"></div>
-  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
 
   <!-- Vendor JS Files -->
   <script src="assets/vendor/aos/aos.js"></script>

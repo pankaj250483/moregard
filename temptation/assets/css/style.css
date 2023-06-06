@@ -1916,11 +1916,8 @@ section {
     display: none;
   }
   
-  .dropdown {
-    float: right;
-    overflow: hidden;
-  }
   
+<<<<<<< HEAD
   .dropdown .dropbtn {
     font-size: 17px;    
     border: none;
@@ -1952,18 +1949,19 @@ section {
   
   .topnav a:hover, .dropdown:hover .dropbtn {
     background-color:black ;
+=======
+  .topnav a:hover {
+    
+>>>>>>> f2ec1f01c4b36b7eab30d822add1d5061bdc90d6
     color: white;
   }
   
-  .dropdown-content a:hover {
-    background-color: #ddd;
-    color: black;
+  .bg-firm
+  {
+    background-image: url('../img/pexels-F1.jpeg');
+    background-position: center center;
+    background-size: cover;
   }
-  
-  .dropdown:hover .dropdown-content {
-    display: block;
-  }
-  
   @media screen and (max-width: 600px) {
     .topnav a:not(:first-child), .dropdown .dropbtn {
       display: none;
