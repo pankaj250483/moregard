@@ -1916,8 +1916,6 @@ section {
     display: none;
   }
   
-  
-<<<<<<< HEAD
   .dropdown .dropbtn {
     font-size: 17px;    
     border: none;
@@ -1949,10 +1947,6 @@ section {
   
   .topnav a:hover, .dropdown:hover .dropbtn {
     background-color:black ;
-=======
-  .topnav a:hover {
-    
->>>>>>> f2ec1f01c4b36b7eab30d822add1d5061bdc90d6
     color: white;
   }
   
