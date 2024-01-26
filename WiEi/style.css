@@ -551,12 +551,12 @@ input
 {
     position: relative;
     width: 100%;
-    height: 110vh;
+    height: 100vh;
     display: flex;
     align-items: center; /* Vertically center content */
     justify-content: center; /* Horizontally center content */
     overflow: hidden;
-    top: -130px;
+    /* top: -130px; */
 }
 
 .hero-image 
