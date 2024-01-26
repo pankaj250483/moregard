@@ -589,15 +589,19 @@ input
 .navbar
 {
     transition:1s ease;
-    /* background:transparent !important; */
+    background:transparent !important;
     display: none;
 }
 
-.navbar:hover, .navbar.scrolled
+ .navbar.scrolled
 {
-  /* color: white !important; 
-  background-color: rgba(0,0,0,0.48) !important; */
+  color: white !important; 
+  background-color: rgba(255, 253, 253, 0.95) !important;
   display: block;
+  .nav-link:link, .nav-link:active, .nav-link:hover, .nav-link:visited
+  {
+    color: white;
+  }
 }
 
 body
