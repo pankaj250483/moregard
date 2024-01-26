@@ -590,13 +590,15 @@ input
 {
     transition:1s ease;
     /* background:transparent !important; */
+    display: none;
 }
-/* 
+
 .navbar:hover, .navbar.scrolled
 {
-  color: white !important; 
-  background-color: rgba(0,0,0,0.48) !important;
-} */
+  /* color: white !important; 
+  background-color: rgba(0,0,0,0.48) !important; */
+  display: block;
+}
 
 body
 {
