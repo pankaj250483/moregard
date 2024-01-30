@@ -43,7 +43,7 @@
 
 body {
   margin: 0;
-  font-family: var(--bs-font-sans-serif);
+  font-family: "Poppins";
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
@@ -586,25 +586,22 @@ input
     }
 }
 
-.navbar
-{
-    transition:1s ease;
-    background:transparent !important;
-    display: none;
-}
-
- .navbar.scrolled
-{
-  color: white !important; 
-  background-color: rgba(255, 253, 253, 0.95) !important;
-  display: block;
-  .nav-link:link, .nav-link:active, .nav-link:hover, .nav-link:visited
-  {
-    color: white;
-  }
-}
 
 body
 {
   margin: 0px;
+}
+
+h1,h2
+{
+  color: goldenrod;
+}
+
+.bg-value
+{
+  background-image: url(images/values.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  min-height: 550px;
 }
