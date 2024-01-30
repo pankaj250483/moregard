@@ -43,7 +43,7 @@
 
 body {
   margin: 0;
-  font-family: var(--bs-font-sans-serif);
+  font-family: "Poppins";
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
@@ -595,4 +595,13 @@ body
 h1,h2
 {
   color: seab
+}
+
+.bg-value
+{
+  background-image: url(images/values.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  min-height: 550px;
 }
