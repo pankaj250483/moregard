@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Drain and Spin Enterprises, Inc. </title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+    integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <!-- <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"> -->
+  <link rel="stylesheet" href="style.css" type="text/css">
+  <style>
+
+    .navbar
+    {
+        transition:1s ease;
+        background:transparent !important;
+        display: none;
+        background-color: white;
+    }
+
+    .navbar.scrolled
+    {
+      color: white !important; 
+      background-color: rgba(255, 253, 253, 0.95) !important;
+      display: block;
+      transition: display 2s;
+      .nav-link:link, .nav-link:active, .nav-link:hover, .nav-link:visited
+      {
+        color: white;
+      }
+    }
+
+
+
+  </style>
+</head>
+
+<include src="nav.html"></include>
+
+<body>
+  <div class="hero-container">
+    <img src="images/birdge.jpg" class="hero-image" id="zoom-image">
+</div>
+
+  <!-- footer-area -->
+  <include src="footer.html"></include>
+ 
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+       //navbar scroll
+       $(window).scroll(function () {
+        $('nav').toggleClass('scrolled', $(this).scrollTop() > 250);
+    });
+
+        //JS Codes for include nav and footer html files
+        let includes = document.getElementsByTagName('include');
+    for (var i = 0; i < includes.length; i++) {
+        let include = includes[i];
+        load_file(includes[i].attributes.src.value, function (text) {
+            $(include).before(text);
+            // include.insertAdjacentHTML('afterend', text);
+            include.remove();
+        });
+    }
+
+    function load_file(filename, callback) {
+        fetch(filename).then(response => response.text()).then(text => callback(text));
+    }
+
+
+       AOS.init();
+
+  </script>
+</body>
+</html>

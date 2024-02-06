@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Whispers & Intel Enterprises, Inc.</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+  integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <link rel="stylesheet" href="style.css" type="text/css">
+
+</head>
+
+<body>
+
+  <include src="nav.html"></include>
+
+  <!-- service-header-section -->
+  <div class="container-fluid  service-1">
+    <h1 class="text-white py-5 services-title">Contact Us</h1>
+  </div>
+
+  <div class="container my-5">
+    <div class="row justify-content-center">
+      <div class="col-md-5 border 2 ps-3 pt-4"><h4>Drain and Spin Enterprises, Inc.</h4>
+        <p class="px-5 pt-4" style="font-size:18px;">
+          
+          225 S 6th Street<br>STE 3900<br>Minneapolis, MN 55402<br>
+          <br>
+          167 North Green Street<br>
+          Chicago, IL 60607<br><br>
+          <!-- <i class="fa fa-phone-alt mr-2"></i>  -->
+          &nbsp; (888) 489-3454<br>
+          &nbsp; (612) 464-9891<br>
+          &nbsp; (312) 973-2342<br><br>
+          <!-- <i class="fa fa-envelope mr-2"></i> -->
+           &nbsp; info@drainandspin.com
+          <br>
+          </p>
+        <!-- <div style="text-align:center;font-size:18px;">
+          <img src="assets/images/truck.png" style="margin-top:200px;" class="img-fluid">
+        </div> -->
+      </div>
+    </div>
+
+    </div>
+
+    <!-- footer-section -->
+  <include src="footer.html"></include>
+  
+  <script>
+    //JS Codes for include nav and footer html files
+    let includes = document.getElementsByTagName('include');
+ for (var i = 0; i < includes.length; i++) {
+     let include = includes[i];
+     load_file(includes[i].attributes.src.value, function (text) {
+         $(include).before(text);
+         // include.insertAdjacentHTML('afterend', text);
+         include.remove();
+     });
+ }
+
+ function load_file(filename, callback) {
+     fetch(filename).then(response => response.text()).then(text => callback(text));
+ }
+ 
+AOS.init();
+</script>
+</body>
+
+</html>
